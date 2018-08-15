@@ -33,16 +33,3 @@ int removeElement(int *nums, int numsSize, int val) {
     return numsSize - size;
 }
 
-void testRemoveElement() {
-    printf("输入: [0,1,0,2,1,0,1,3,2,1,2,1] \n");
-    int a[] = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
-    int size = removeElement(a, 12, 1);
-    printf("结果:\n");
-    for (int i = 0; i < size; ++i) {
-        printf(" %d  ", a[i]);
-    }
-    printf("本题解答完毕！！！！！");
-    printf("\n\n");
-
-}
-

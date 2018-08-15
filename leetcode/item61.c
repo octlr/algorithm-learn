@@ -1,4 +1,5 @@
 #include "leetcode.h"
+
 //
 // Created by Administrator on 2018/8/13.
 //给定一个链表，旋转链表，将链表每个节点向右移动 k 个位置，其中 k 是非负数。
@@ -19,5 +20,11 @@
 //向右旋转 4 步: 2->0->1->NULL
 //
 struct ListNode *rotateRight(struct ListNode *head, int k) {
+    int i = 1;
+    struct ListNode *temp = head;
+    while (temp != NULL) {
+        i++;
+        temp = temp->next;
+    }
 
 }

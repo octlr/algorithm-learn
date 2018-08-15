@@ -53,35 +53,3 @@ struct ListNode *addTwoNumbers(struct ListNode *l1, struct ListNode *l2) {
     }
     return list;
 }
-
-void testAddTwoNumbers() {
-    struct ListNode *node1 = (struct ListNode *) malloc(sizeof(struct ListNode));
-    node1->val = 1;
-    struct ListNode *node2 = (struct ListNode *) malloc(sizeof(struct ListNode));
-    node2->val = 2;
-    node1->next = node2;
-    struct ListNode *node3 = (struct ListNode *) malloc(sizeof(struct ListNode));
-    node3->val = 6;
-    node2->next = node3;
-    node3->next = NULL;
-    struct ListNode *node4 = (struct ListNode *) malloc(sizeof(struct ListNode));
-    node4->val = 4;
-    struct ListNode *node5 = (struct ListNode *) malloc(sizeof(struct ListNode));
-    node5->val = 5;
-    node4->next = node5;
-    struct ListNode *node6 = (struct ListNode *) malloc(sizeof(struct ListNode));
-    node6->val = 6;
-    node6->next = NULL;
-    node5->next = node6;
-    struct ListNode *result = addTwoNumbers(node1, node4);
-    printf("输入链表1: 1->2->6\n");
-    printf("输入链表2: 4->5->6\n");
-    printf("结果:\n");
-    while (result != NULL) {
-        printf("  %d  ", result->val);
-        result = result->next;
-    }
-    printf("\n");
-    printf("本题解答完毕！！！！！");
-    printf("\n\n");
-}

@@ -40,34 +40,3 @@ struct ListNode *removeNthFromEnd(struct ListNode *head, int n) {
         return head;
     }
 }
-
-void testRemoveNthFromEnd() {
-    struct ListNode *node1 = (struct ListNode *) malloc(sizeof(struct ListNode));
-    node1->val = 1;
-    struct ListNode *node2 = (struct ListNode *) malloc(sizeof(struct ListNode));
-    node2->val = 2;
-    node1->next = node2;
-    struct ListNode *node3 = (struct ListNode *) malloc(sizeof(struct ListNode));
-    node3->val = 3;
-    node2->next = node3;
-    struct ListNode *node4 = (struct ListNode *) malloc(sizeof(struct ListNode));
-    node4->val = 4;
-    node3->next = node4;
-    struct ListNode *node5 = (struct ListNode *) malloc(sizeof(struct ListNode));
-    node5->val = 5;
-    node4->next = node5;
-    struct ListNode *node6 = (struct ListNode *) malloc(sizeof(struct ListNode));
-    node6->val = 6;
-    node6->next = NULL;
-    node5->next = node6;
-    struct ListNode *result = removeNthFromEnd(node1, 2);
-    printf("输入链表: 1->2->3->4->5->6,删除节点为：2 \n");
-    printf("结果:\n");
-    while (result != NULL) {
-        printf("  %d  ", result->val);
-        result = result->next;
-    }
-    printf("\n");
-    printf("本题解答完毕！！！！！");
-    printf("\n\n");
-}

@@ -25,8 +25,6 @@ struct ListNode {
  */
 int trap(int *height, int heightSize);
 
-void testTrap();
-
 /**
  * leetcode 算法第27题
  * 给定一个数组 nums 和一个值 val，你需要原地移除所有数值等于 val 的元素，返回移除后数组的新长度。
@@ -57,8 +55,6 @@ void testRemoveElement();
  * @return
  */
 struct ListNode *removeNthFromEnd(struct ListNode *head, int n);
-void testRemoveNthFromEnd();
-
 
 /**
  * leetcode 算法第2题
@@ -74,7 +70,6 @@ void testRemoveNthFromEnd();
  *
  */
 struct ListNode *addTwoNumbers(struct ListNode *l1, struct ListNode *l2);
-void testAddTwoNumbers();
 
 /**
  * 给定一个链表，旋转链表，将链表每个节点向右移动 k 个位置，其中 k 是非负数。
@@ -101,7 +96,6 @@ void testAddTwoNumbers();
  * @return
  */
 struct ListNode* rotateRight(struct ListNode* head, int k);
-void testRotateRight();
 
 
 //
@@ -114,8 +108,6 @@ void testRotateRight();
 //
 
 struct ListNode* reverseBetween(struct ListNode* head, int m, int n);
-void testReverseBetween();
-
 
 
 

@@ -46,12 +46,3 @@ int trap(int *height, int heightSize) {
     }
     return result;
 }
-
-void testTrap() {
-    printf("输入: [0,1,0,2,1,0,1,3,2,1,2,1] \n");
-    int a[] = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
-    int result = trap(a, 12);
-    printf("结果: %d \n", result);
-    printf("本题解答完毕！！！！！");
-    printf("\n\n");
-}
