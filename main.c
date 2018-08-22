@@ -15,10 +15,12 @@ int main() {
     node3->next = node4;
     struct ListNode *node5 = (struct ListNode *) malloc(sizeof(struct ListNode));
     node5->val = 5;
+    node5->next = NULL;
     node4->next = node5;
-    struct ListNode *node6 = (struct ListNode *) malloc(sizeof(struct ListNode));
-    node6->val = 6;
-    node6->next = NULL;
-    node5->next = node6;
+    struct ListNode *result= rotateRight(node1, 2);
+    while(result!=NULL){
+        printf("%d\n",result->val);
+        result=result->next;
+    }
     return 0;
 }

@@ -20,11 +20,26 @@
 //向右旋转 4 步: 2->0->1->NULL
 //
 struct ListNode *rotateRight(struct ListNode *head, int k) {
-    int i = 1;
+    int i = 0;
     struct ListNode *temp = head;
     while (temp != NULL) {
         i++;
         temp = temp->next;
     }
+    temp = head;
+    if (i > k) {
+        int m = i - k;
+        int n = 0;
+        while (m == n) {
+            n++;
+            temp = temp->next;
+        }
 
+
+    } else if (i < k) {
+        int m = i - (k % i);
+        int n = 0;
+    } else {
+        return head;
+    }
 }
