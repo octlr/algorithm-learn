@@ -7,7 +7,7 @@ include_directories(./include)
 
 add_subdirectory(leetcode)
 
-add_executable(algorithm_learn main.c include/AVL.h include/BST.h include/RBT.h)
+add_executable(algorithm_learn main.c include/AVL.h include/BST.h include/RBT.h include/BTree.h)
 
 target_link_libraries(algorithm_learn
         leetcode
